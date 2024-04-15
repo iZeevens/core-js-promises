@@ -18,14 +18,13 @@
  * 1    => promise that will be fulfilled
  */
 function getPromise(number) {
-  const promise = new Promise(function a(resolve, reject) {
+  return new Promise(function a(resolve, reject) {
     if (number > 1) {
       resolve(number);
     } else {
       reject(number);
     }
   });
-  return promise;
 }
 
 /**
